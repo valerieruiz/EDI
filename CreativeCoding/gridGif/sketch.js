@@ -3,7 +3,7 @@
 let gif;
 
 function preload(){ //preload image or gif
-  gif = loadImage(assets/ai_background.gif);
+  gif = loadImage('assets/ai_background.gif');
 }
 
 function setup() { // runs once
