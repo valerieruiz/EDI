@@ -1,8 +1,4 @@
 //create a program that can customize the number of squares in a grid
-let gif;
-function preload(){
-  gif = loadImage ('ai_background2.gif');
-}
 function setup() { // runs once
   createCanvas(windowWidth, windowWidth); //canvas is 720x720 pixels
   background (252, 250, 252); //rgb
@@ -16,8 +12,6 @@ function draw() { // runs in a loop
   var num = 10; //number of squares in the array
   var sideLength = windowWidth/num;
 
-translate (-100, -100);
-
   for (var y = 0; y < windowWidth; y = y+sideLength){
     for (var x = 0; x < windowWidth; x = x+sideLength){ // loop creates a row in the x direction (top two squares)
       quad(x,y,
@@ -27,8 +21,5 @@ translate (-100, -100);
       image (gif, x, y, windowWidth/num, windowWidth/num);
     }
   }
-}
 
-function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
 }
