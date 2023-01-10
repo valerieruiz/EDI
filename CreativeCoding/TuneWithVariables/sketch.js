@@ -18,7 +18,6 @@ function draw() { // runs in a loop
           x+sideLength, y,
           x+sideLength,y+sideLength,
           x, y+sideLength);
-      image (gif, x, y, windowWidth/num, windowWidth/num);
     }
   }
 
