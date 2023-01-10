@@ -19,10 +19,15 @@ function draw() { // runs in a loop
   var num = 20; //number of squares in the array
   var sideLength = windowWidth/num;
 
-  for (var y = 0; y < windowWidth; y = y+sideLength){
-    for (var x = 0; x < windowWidth; x = x+sideLength){ // loop creates a row in the x direction (top two squares)
+translate (-150, -150); //gives bleeding effect
+
+  for (var y = 0; y < 2 * windowWidth; y = y+sideLength){
+    for (var x = 0; x < 2 * windowWidth; x = x+sideLength){ // loop creates a row in the x direction (top two squares)
       image (gif, x, y, windowWidth/num, windowWidth/num);
     }
   }
+}
 
+function windowResized(){ //resizes and refreshes design
+  resizeCanvas(windowWidth, windowHeight);
 }
