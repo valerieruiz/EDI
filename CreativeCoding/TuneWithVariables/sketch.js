@@ -1,7 +1,7 @@
 //create a program that can customize the number of squares in a grid
 let gif;
 function preload(){
-  gif = loadImage ('assets/ai_background.gif');
+  gif = loadImage ('ai_background2.gif');
 }
 function setup() { // runs once
   createCanvas(windowWidth, windowWidth); //canvas is 720x720 pixels
