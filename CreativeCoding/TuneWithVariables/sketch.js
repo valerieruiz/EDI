@@ -9,7 +9,7 @@ function draw() { // runs in a loop
   fill (252, 250, 252); //fills the next shape
   strokeWeight(1); //adjust stroke weight of the square
 
-  var num = 20; //number of squares in the array
+  var num = 10; //number of squares in the array
   var sideLength = windowWidth/num;
 
   for (var y = 0; y < windowWidth; y = y+sideLength){
