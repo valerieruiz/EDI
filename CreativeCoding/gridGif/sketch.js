@@ -28,6 +28,6 @@ translate (-150, -150); //gives bleeding effect
   }
 }
 
-function windowResized(){ //resizes and refreshes design
+function windowResized(){ //resizes and refreshes design with the browser
   resizeCanvas(windowWidth, windowHeight);
 }
